@@ -1,0 +1,149 @@
+.container {
+    width: 100%;
+    max-width: 122.5rem;
+    margin: 0 auto;
+    padding: 0 0.4rem;
+}
+
+.presentacion div {
+    line-height: 7rem;
+} 
+
+.we-about {
+    padding-right: 2rem;
+}
+
+.we-about h5 {
+    padding-left: 1rem;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #F36E43;
+    letter-spacing: .5rem;
+    text-transform: uppercase;   
+}
+
+.we-about p {
+    color: #fff;
+    padding-left: 3rem;
+    font-weight: 300;
+    line-height: 2.3rem;
+    text-align: justify;
+}
+
+.we-about p b {
+    color:#F36E43;
+    font-weight: 400;
+}
+
+.mision {
+    padding-top: 1.3rem;
+}
+
+.vision {
+    padding-top: 1.3rem;
+} 
+
+.fundador {
+    padding-top: 1.3rem;
+    text-align: left;
+}
+
+/* media query */
+@media  screen and (min-width: 900px) {
+
+    body {
+        background-image: url(../img/bkg.png);
+        background-position: top;
+        background-size: 210vh;
+        background-repeat: no-repeat;
+     }
+    
+    section {
+        padding: 7.9rem;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .nav {
+        justify-content: space-between;
+    }
+
+    .nav-list {
+        position: initial;
+        width: initial;
+        height: initial;
+        background-color: transparent;
+        padding: 0;
+        justify-content: initial;
+        flex-direction: row;
+        transform: initial;
+        transition: initial;
+    }
+
+    .nav-item {
+        margin: 0 2.4rem;
+    }
+
+    .nav-item:last-child {
+        margin-right: 0;
+    }
+
+    .nav-link {
+        font-size: 1.5rem;
+    }
+
+    .active {
+        position: relative;
+    }
+
+    .active::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #F36E43;
+        left: 0;
+        bottom: -3px;
+    }
+
+    .h2-sub {
+        font-size: 4.7rem;
+    }
+
+    .head {
+        font-size: 4.7rem;
+        letter-spacing: .8rem;
+    }
+
+    .we-about {
+        display: flex;
+        align-items: center;
+    }
+
+    .we-about > div {
+        flex: 1;
+    }
+
+    .info-i {
+        font-size: 3rem;
+        padding: 3rem;
+        padding-top: 0;
+    }
+
+    .info-d {
+        padding-left: 10rem;
+    }
+
+    .footer-content {
+        max-width: 77.5rem;
+        margin: auto;
+    }
+
+    .footer-content-about {
+        max-width: 51.3rem;
+        margin: 0 auto 5.4rem;
+    }
+}
+

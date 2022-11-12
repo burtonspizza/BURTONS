@@ -1,0 +1,191 @@
+.btn-wha {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    bottom: 30px;
+    right: 30px;
+    background: #0df053;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 33px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+    z-index: 100;
+}
+
+.btn-wha i {
+    color: #fff;
+}
+
+.btn-wha:hover {
+    background-color: #fff;
+}
+
+.btn-wha:hover i{
+    color: #0df053;
+}
+
+.nombreMenu{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 500;
+    color: #F36E43;
+    letter-spacing: .5rem;
+    text-transform: uppercase; 
+    padding-bottom: 2rem;
+}
+
+.presentacion{
+    padding-bottom: 5rem;
+}
+
+.presentacion-dos{
+    padding-top: 2rem;
+}
+
+.presentacion-tres{
+    padding-bottom: 5rem;
+}
+
+.container {
+    width: 100%;
+    max-width: 122.5rem;
+    margin: 0 auto;
+    padding: 0 0.4rem;
+}
+
+.espacio{
+    padding: auto;
+}
+
+.postres-about{
+    line-height: 3.5rem;
+    text-align: center;
+    padding: auto;
+}
+
+.name-postres{
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.ingredientes {
+    font-size: 1.5rem;
+    font-weight: 200;
+    line-height: 2.5rem;
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table td{
+    font-size: 1.5rem;
+    padding-left: 1.5rem;
+    font-weight: 800;
+}
+
+.postres-about img{
+    width: 100%;
+    max-width: 100%;
+    padding: 0 10rem;
+}
+
+/* media query */
+@media  screen and (min-width: 900px) {
+
+    body {
+        background-image: url(../img/bkg.png);
+        background-position: top;
+        background-size: 210vh;
+        background-repeat: repeat;
+     }
+    
+    section {
+        padding: 7.9rem;
+    }
+
+    .meat{
+        padding: 0rem 5rem 5rem 15.5rem;
+    }
+
+    .veggie{
+        padding: 0rem 15.5rem 5rem 5rem;
+    }
+
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .nav {
+        justify-content: space-between;
+    }
+
+    .nav-list {
+        position: initial;
+        width: initial;
+        height: initial;
+        background-color: transparent;
+        padding: 0;
+        justify-content: initial;
+        flex-direction: row;
+        transform: initial;
+        transition: initial;
+    }
+
+    .nav-item {
+        margin: 0 2.4rem;
+    }
+
+    .nav-item:last-child {
+        margin-right: 0;
+    }
+
+    .nav-link {
+        font-size: 1.5rem;
+    }
+
+    .active {
+        position: relative;
+    }
+
+    .active::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #F36E43;
+        left: 0;
+        bottom: -3px;
+    }
+
+    .h2-sub {
+        font-size: 4.7rem;
+    }
+
+    .head {
+        font-size: 4.7rem;
+        letter-spacing: .8rem;
+    }
+
+    .postres-about {
+        display: flex;
+        align-items: center;
+    }
+
+    .poestres-about > div {
+        flex: 1;
+    }
+
+    .footer-content {
+        max-width: 77.5rem;
+        margin: auto;
+    }
+
+    .footer-content-about {
+        max-width: 51.3rem;
+        margin: 0 auto 5.4rem;
+    }
+}

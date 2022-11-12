@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400&display=swap');
+
+/* Globales */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Poppins', 'sans-serif';
+    font-size: 10px;
+    color: #fff;
+    scroll-behavior: smooth;
+    background-color: #13252F;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+section {
+    padding: 3.9rem 0;
+    overflow: hidden;
+}
+
+.presentacion {
+    padding: 15rem 0;
+    padding-bottom: 10;
+}
+
+/* para hacer las img responsivas */
+img {
+    width: 100%;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 1.8rem;
+}
+
+.container {
+    width: 100%;
+    max-width: 122.5rem;
+    margin: 0 auto;
+    padding: 0 0.4rem;
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+/*     background-image: linear-gradient(to bottom, rgba(0,0,0,5), transparent); */
+}
+
+/* navegadores */
+.nav {
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* para menu responsivo */
+.menu-toggle {
+    color: #fff;
+    font-size: 2.2rem;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%);
+    right: 2.5rem;
+    cursor: pointer;
+    z-index: 1500;
+}
+
+.fa-times {
+    display: none;
+}
+
+.nav-list {
+    list-style: none;
+    font-size: 1.8rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100vh;
+    background-color: #252525;
+    padding: 4.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    z-index: 1250;
+    transform: translateX(-100%);
+}
+
+.nav::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,.8);
+    z-index: 1000;
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity .5s;
+}
+
+.open .fa-times {
+    display: block;
+}
+
+.open .fa-bars {
+    display: none;
+}
+
+.open .nav-list {
+    transform: translateX(0);
+}
+
+.open .nav::before {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.logo {
+    height: 6rem;
+    display: flex;
+}
+
+/* .nav-item {
+    border-bottom: 2px solid rgba(255,255,255,.3);
+} */
+
+.nav-link {
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    margin-right: -2px;
+}
+
+.nav-link:hover {
+    color: #F36E43;
+}
+
+/* submenu */
+.submenu{
+    position: absolute;
+    background: #F36E43;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s; 
+    list-style: none;
+    font-size: 1.5rem;
+    padding: 1.5rem;
+} 
+
+.submenu li a {
+    display: block;
+    color: #fff;
+}
+
+.submenu li a:hover {
+    display: block;
+    color: rgba(255,255,255,.5);
+}
+
+.nav li:hover .submenu{
+    visibility: visible;
+    opacity: 1;
+}
+
+.global .h2-sub {
+    font-size: 4.9rem;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: .3rem;
+    text-align: left;
+}
+
+.global .h2-2 {
+    font-size: 4.9rem;
+    font-family: 'Poppins', sans-serif;
+    color: #F36E43;
+    font-weight: bold;
+    line-height: 1;
+    letter-spacing: .3rem;
+    text-align: left;
+}
+
+.whats a{
+    color: #fff;
+    font-size: 2rem;
+    height: 10rem;
+    display: flex;
+}
+
+.whats i {
+    color: #46e13b;
+    font-size: 3.5rem;
+    padding-right: 2rem;
+}
+
+.circle {
+    font-size: 1.5rem;
+    color: #F36E43;
+    margin: 0 1.6rem;
+}
+
+.global {
+    text-align: center;
+    margin-top: 3.9rem;
+}
+
+.presentacion .global {
+    margin-top: 6.9rem;
+}
+
+.res-info {
+    text-align: left;
+}
+
+
+/* FOOTER */
+footer {
+    padding: 4rem 0;
+    background-color: #121212;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.footer-content {
+    overflow: hidden;
+}
+
+.footer-content h4 {
+    font-size: 1.9rem;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 3px;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-content-about h4:hover {
+    color: #F36E43;
+}
+
+.footer-content .circle {
+    margin: 2.4rem;
+}
+
+.footer-content-about {
+    margin-bottom: 5.4rem;
+}
+
+.footer-content-about p {
+    line-height: 2;
+}
+
+.footer-div h4 {
+    font-size: 1.9rem;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 3px;
+    margin-bottom: 3rem;
+}
+
+.social-icons {
+    list-style: none;
+    margin-bottom: 5.4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons i {
+    font-size: 2rem;
+    color: #F36E43;
+    padding: .8rem 2rem;
+}
+
+.social-icons i:hover,
+.social-icons i:focus {
+    color: #d9d9d9;
+}
+
+/* media query */
+@media  screen and (min-width: 900px) {
+
+    section {
+        padding: 7.9rem;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .nav {
+        justify-content: space-between;
+    }
+
+    .nav-list {
+        position: initial;
+        width: initial;
+        height: initial;
+        background-color: transparent;
+        padding: 0;
+        justify-content: initial;
+        flex-direction: row;
+        transform: initial;
+        transition: initial;
+    }
+
+    .nav-item {
+        margin: 0 2.4rem;
+    }
+
+    .nav-item:last-child {
+        margin-right: 0;
+    }
+
+    .nav-link {
+        font-size: 1.5rem;
+    }
+
+    .active {
+        position: relative;
+    }
+
+    .active::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #F36E43;
+        left: 0;
+        bottom: -3px;
+    }
+
+    .h2-sub {
+        font-size: 4.7rem;
+    }
+
+    .head {
+        font-size: 4.7rem;
+        letter-spacing: .8rem;
+    }
+
+    .res-info {
+        display: flex;
+        align-items: center;
+    }
+
+    .res-info > div {
+        flex: 1;
+    }
+
+    .info-izq {
+        font-size: 3rem;
+        padding: 3rem;
+    }
+
+    .pizza {
+        padding-left: 10rem;
+    }
+
+    .footer-content {
+        max-width: 77.5rem;
+        margin: auto;
+    }
+
+    .footer-content-about {
+        max-width: 51.3rem;
+        margin: 0 auto 5.4rem;
+    }
+
+}
